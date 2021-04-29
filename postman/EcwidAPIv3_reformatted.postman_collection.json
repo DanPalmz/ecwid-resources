@@ -1,0 +1,2601 @@
+{
+	"info": {
+		"name": "Ecwid API v3 - Reformatted by @DanPalmz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get all categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/categories",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"New Cool Category\",\n        \"description\": \"Hey, this is my <b>new</b> category!\",\n        \"enabled\": true,\n\t\t\"orderBy\": 10\n        \n    }"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/categories",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get category details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/categories/SET-CATEGORY-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"categories",
+								"SET-CATEGORY-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update / edit a category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Updated name\",\n  \"description\": \"Updated <b>description</b>\",\n  \"enabled\": true        \n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/categories/SET-CATEGORY-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"categories",
+								"SET-CATEGORY-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload / add category icon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/categories/SET-CATEGORY-ID/image",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"categories",
+								"SET-CATEGORY-ID",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete category icon",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/categories/SET-CATEGORY-ID/image",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"categories",
+								"SET-CATEGORY-ID",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/categories/SET-CATEGORY-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"categories",
+								"SET-CATEGORY-ID"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Search customers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/customers?maxOrderCount=5",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "maxOrderCount",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"example@example.com\",\n\t\"password\":\"ecwidiscool\",\n    \"billingPerson\": {\n        \"name\": \"Eugene K\",\n        \"companyName\": \"Hedgehog and Bucket\",\n        \"street\": \"Hedgehog Street, 1\",\n        \"city\": \"Bucket\",\n        \"countryCode\": \"US\",\n        \"postalCode\": \"90002\",\n        \"stateOrProvinceCode\": \"CA\",\n        \"phone\": \"11111111111\"\n    },\n    \"shippingAddresses\": [\n        {\n            \"name\": \"Eugene K\",\n            \"companyName\": \"Hedgehog and Bucket\",\n            \"street\": \"Hedgehog Street, 3\",\n            \"city\": \"Bucket\",\n            \"countryCode\": \"US\",\n            \"postalCode\": \"90002\",\n            \"stateOrProvinceCode\": \"CA\",\n            \"phone\": \"11111111111\"\n        }\n      ]\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/customers",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get customer details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/customers/SET-CUSTOMER-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"customers",
+								"SET-CUSTOMER-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update / edit a customer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"new-email@example.com\",\n\t\"password\":\"newpassword\",\n    \"billingPerson\": {\n        \"name\": \"New Name\",\n        \"companyName\": \"Ecwid\",\n        \"street\": \"Updated street\",\n        \"city\": \"Bucket\",\n        \"countryCode\": \"US\",\n        \"postalCode\": \"90002\",\n        \"stateOrProvinceCode\": \"CA\",\n        \"phone\": \"11111111111\"\n    },\n    \"shippingAddresses\": [\n        {\n            \"name\": \"Eugene K\",\n            \"companyName\": \"Hedgehog and Bucket\",\n            \"street\": \"Hedgehog Street, 3\",\n            \"city\": \"Bucket\",\n            \"countryCode\": \"US\",\n            \"postalCode\": \"90002\",\n            \"stateOrProvinceCode\": \"CA\",\n            \"phone\": \"11111111111\"\n        }\n      ]\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/customers/SET-CUSTOMER-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"customers",
+								"SET-CUSTOMER-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a customer",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/customers/SET-CUSTOMER-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"customers",
+								"SET-CUSTOMER-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get deleted customers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/customers/deleted",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"customers",
+								"deleted"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discount coupons",
+			"item": [
+				{
+					"name": "Get all discount coupons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/discount_coupons?code=&discount_type=ABS,PERCENT&availability=ACTIVE,EXPIRED",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"discount_coupons"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": ""
+								},
+								{
+									"key": "discount_type",
+									"value": "ABS,PERCENT"
+								},
+								{
+									"key": "availability",
+									"value": "ACTIVE,EXPIRED"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a discount coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"New Coupon - 10$ off\",\n    \"code\": \"UNN9GN6XAW2M\",\n    \"discountType\": \"ABS\",\n    \"status\": \"ACTIVE\",\n    \"discount\": 10,\n    \"launchDate\": \"2014-09-01\",\n    \"usesLimit\": \"UNLIMITED\",\n    \"repeatCustomerOnly\": false,\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/discount_coupons",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"discount_coupons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a discount coupon",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/discount_coupons/SET-COUPON-CODE",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"discount_coupons",
+								"SET-COUPON-CODE"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update / edit a discount coupon",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Updated name: New Coupon - 30% off\",\n   \"discountType\": \"PERCENT\",\n   \"status\": \"ACTIVE\",\n   \"discount\": 30\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/discount_coupons/SET-COUPON-CODE",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"discount_coupons",
+								"SET-COUPON-CODE"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a discount coupon",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/discount_coupons/SET-COUPON-CODE",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"discount_coupons",
+								"SET-COUPON-CODE"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get deleted coupons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/discount_coupons/deleted",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"discount_coupons",
+								"deleted"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get orders / search orders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get order details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders/SET-ORDER-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders",
+								"SET-ORDER-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update / edit an order",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"subtotal\": 35,\n        \"total\": 45,\n        \"email\": \"newemail@example.com\",\n        \"paymentMethod\": \"New payment method\",\n        \"tax\": 0,\n        \"paymentStatus\": \"AWAITING_PAYMENT\",\n        \"fulfillmentStatus\": \"AWAITING_PROCESSING\",\n        \"items\": [\n            {\n                \"price\": 20,\n                \"weight\": 0.32,\n                \"sku\": \"00004\",\n                \"quantity\": 2,\n                \"name\": \"Updated item\",\n            }\n        ],\n        \"billingPerson\": {\n            \"name\": \"Eugene K\",\n            \"companyName\": \"Hedgehog and Bucket\",\n            \"street\": \"My Street\",\n            \"city\": \"San Diego\",\n            \"countryCode\": \"US\",\n            \"postalCode\": \"90002\",\n            \"stateOrProvinceCode\": \"CA\",\n            \"phone\": \"123141321\"\n        },\n        \"shippingPerson\": {\n            \"name\": \"Eugene K\",\n            \"companyName\": \"Hedgehog and Bucket\",\n            \"street\": \"My Street\",\n            \"city\": \"San Diego\",\n            \"countryCode\": \"US\",\n            \"postalCode\": \"90002\",\n            \"stateOrProvinceCode\": \"CA\",\n            \"phone\": \"123141321\"\n        },\n        \"shippingOption\": {\n            \"shippingMethodName\": \"Fast Delivery\",\n            \"shippingRate\": 10\n        }\n    }"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders/SET-ORDER-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders",
+								"SET-ORDER-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an order",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders/SET-ORDER-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders",
+								"SET-ORDER-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload a new product option file for a purchased item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders/SET-ORDER-ID/items/SET-ORDER-ITEM-ID/options/SET-OPTION-NAME?fileName=SET-FILE-NAME",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders",
+								"SET-ORDER-ID",
+								"items",
+								"SET-ORDER-ITEM-ID",
+								"options",
+								"SET-OPTION-NAME"
+							],
+							"query": [
+								{
+									"key": "fileName",
+									"value": "SET-FILE-NAME"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a product option file",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders/SET-ORDER-ID/items/SET-ORDER-ITEM-ID/options/SET-OPTION-NAME/files/SET-FILE-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders",
+								"SET-ORDER-ID",
+								"items",
+								"SET-ORDER-ITEM-ID",
+								"options",
+								"SET-OPTION-NAME",
+								"files",
+								"SET-FILE-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search orders by public Order ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders?number=SET-ORDER-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "number",
+									"value": "SET-ORDER-ID"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search orders by total",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders?totalFrom=20&totalTo=500",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "totalFrom",
+									"value": "20"
+								},
+								{
+									"key": "totalTo",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search orders by order statuses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders?paymentStatus=PAID,CANCELLED,AWAITING_PAYMENT,REFUNDED&fulfillmentStatus=AWAITING_PROCESSING,PROCESSING,SHIPPED,DELIVERED,WILL_NOT_DELIVER,RETURNED",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "paymentStatus",
+									"value": "PAID,CANCELLED,AWAITING_PAYMENT,REFUNDED"
+								},
+								{
+									"key": "fulfillmentStatus",
+									"value": "AWAITING_PROCESSING,PROCESSING,SHIPPED,DELIVERED,WILL_NOT_DELIVER,RETURNED"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search orders by customer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders?customer=SET-CUSTOMER-NAME-OR-EMAIL",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "customer",
+									"value": "SET-CUSTOMER-NAME-OR-EMAIL"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search orders by keywords ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders?keywords=SET-ANY-KEYWORD",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "keywords",
+									"value": "SET-ANY-KEYWORD"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search orders by created date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders?createdFrom=2012-04-25&createdTo=2018-05-1",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "createdFrom",
+									"value": "2012-04-25"
+								},
+								{
+									"key": "createdTo",
+									"value": "2018-05-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search orders by updated date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders?updatedFrom=2012-04-25&updatedTo=2018-05-1",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "updatedFrom",
+									"value": "2012-04-25"
+								},
+								{
+									"key": "updatedTo",
+									"value": "2018-05-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show unfinished orders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders?paymentStatus=INCOMPLETE",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "paymentStatus",
+									"value": "INCOMPLETE"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get deleted orders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/orders/deleted",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"orders",
+								"deleted"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Classes",
+			"item": [
+				{
+					"name": "Get all product classes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/classes",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"classes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get product class details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/classes/0",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"classes",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new product class",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"name\": \"T-Shirts\",\n    \"attributes\": [\n   \n        {\n            \"name\": \"Gender\",\n            \"type\": \"CUSTOM\",\n            \"show\": \"DESCR\"\n        },\n        {\n            \"name\": \"Age group\",\n            \"type\": \"CUSTOM\",\n            \"show\": \"DESCR\"\n        },\n        {\n            \"name\": \"Color\",\n            \"type\": \"CUSTOM\",\n            \"show\": \"DESCR\"\n        },\n        {\n            \"name\": \"Size\",\n            \"type\": \"CUSTOM\",\n            \"show\": \"DESCR\"\n        }\n      ]\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/classes",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"classes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update product class",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"New Class Name\",\n        \"attributes\": [\n            {\n\t\t\t\tname: \"New attribute name\",\n\t\t\t\ttype: \"CUSTOM\",\n\t\t\t\tshow: \"DESCR\"            \n            }\n        ]\n    }"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/classes/SET-PRODUCT-CLASS-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"classes",
+								"SET-PRODUCT-CLASS-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete custom product class",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/classes/SET-PRODUCT-CLASS-iD",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"classes",
+								"SET-PRODUCT-CLASS-iD"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Combinations",
+			"item": [
+				{
+					"name": "Get all combinations for a product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a specific combination",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations/SET-COMBINATION-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations",
+								"SET-COMBINATION-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new combination",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"options\": [\n        {\n            \"name\": \"Size\",\n            \"value\": \"L\"\n        },\n        {\n            \"name\": \"Color\",\n            \"value\": \"Red\"\n        }\n    ],\n    \"price\": 10,\n    \"quantity\":4,\n    \"weight\":0.5,\n    \"sku\":\"combination-sku\",\n    \"tangible\":true\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all combinations",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a combination",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations/SET-COMBINATION-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations",
+								"SET-COMBINATION-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a combination",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\": 20,\n    \"quantity\":7,\n    \"weight\":0.7,\n    \"unlimited\":false,\n    \"sku\":\"combo-sku\",\n    \"tangible\":true\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations/SET-COMBINATION-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations",
+								"SET-COMBINATION-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update wholesale prices of a combination",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"wholesalePrices\": [\n        {\n            \"quantity\": 4,\n            \"price\": 10\n        },\n        {\n            \"quantity\": 9,\n            \"price\": 9\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations/SET-COMBINATION-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations",
+								"SET-COMBINATION-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add / upload a product combination image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations/SET-COMBINATION-ID/image",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations",
+								"SET-COMBINATION-ID",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a product combination image",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/combinations/SET-COMBINATION-ID/image",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"combinations",
+								"SET-COMBINATION-ID",
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get product details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search products by keyword",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products?keyword=SET-KEYWORD-TO-SEARCH",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "SET-KEYWORD-TO-SEARCH"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search products by their price",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products?priceFrom=10&priceTo=500",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							],
+							"query": [
+								{
+									"key": "priceFrom",
+									"value": "10"
+								},
+								{
+									"key": "priceTo",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search / show products by category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products?category=SET-CATEGORY-ID&withSubcategories=true",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "SET-CATEGORY-ID"
+								},
+								{
+									"key": "withSubcategories",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search products by created date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products?createdFrom=2012-04-25&createdTo=2018-05-1",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							],
+							"query": [
+								{
+									"key": "createdFrom",
+									"value": "2012-04-25"
+								},
+								{
+									"key": "createdTo",
+									"value": "2018-05-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show \"out of stock\" products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products?inStock=false",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							],
+							"query": [
+								{
+									"key": "inStock",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search products by updated date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products?updatedFrom=2011-05-01&updatedTo=2018-05-6",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							],
+							"query": [
+								{
+									"key": "updatedFrom",
+									"value": "2011-05-01"
+								},
+								{
+									"key": "updatedTo",
+									"value": "2018-05-6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show disabled products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products?enabled=false",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							],
+							"query": [
+								{
+									"key": "enabled",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sku\": \"my-sku-1\",\n    \"unlimited\": false,\n    \"quantity\": 10,\n    \"inStock\": true,\n    \"name\": \"New Product\",\n    \"price\": 20.99,\n    \"weight\": 10,\n    \"enabled\": true,\n    \"description\": \"<b>Description</b>\"\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update / edit a product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \"sku\": \"new-sku-001\",\n    \"quantity\": 20,\n    \"inStock\": false,\n    \"name\": \"Updated Product\",\n    \"price\": 30.99,\n    \"listPrice\": 44.99,\n    \"weight\": 3,\n    \"enabled\": true,\n    \"description\": \"<b>Updated Description</b>\"\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add / Update product image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/image",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product image",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/image",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload additional (gallery) product image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/gallery",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"gallery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete one additional (gallery) product image",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/gallery/SET-GALLERY-IMAGE-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"gallery",
+								"SET-GALLERY-IMAGE-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all additional (gallery) product images",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/gallery",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"gallery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add  product file (e-goods)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/files",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"files"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product file",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/files/SET-FILE-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"files",
+								"SET-FILE-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all product files",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID/files",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID",
+								"files"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update related products of a specific item",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"relatedProducts\": {\n        \"productIds\": [\n          <RELATED-PRODUCT-ID-1>,\n          <RELATED-PRODUCT-ID-2>            \n        ]\n    }\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update product options",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"options\": [\n        {\n            \"type\": \"RADIO\",\n            \"name\": \"Color\",\n            \"choices\": [\n                {\n                    \"text\": \"Red\",\n                    \"priceModifier\": 0,\n                    \"priceModifierType\": \"ABSOLUTE\"\n                },\n                {\n                    \"text\": \"Green\",\n                    \"priceModifier\": 0,\n                    \"priceModifierType\": \"ABSOLUTE\"\n                },\n                {\n                    \"text\": \"Yellow\",\n                    \"priceModifier\": 0,\n                    \"priceModifierType\": \"ABSOLUTE\"\n                }\n            ],\n            \"defaultChoice\": 2,\n            \"required\": false\n        },\n        {\n            \"type\": \"SELECT\",\n            \"name\": \"Size\",\n            \"choices\": [\n                {\n                    \"text\": \"S\",\n                    \"priceModifier\": 0,\n                    \"priceModifierType\": \"ABSOLUTE\"\n                },\n                {\n                    \"text\": \"L\",\n                    \"priceModifier\": 10,\n                    \"priceModifierType\": \"ABSOLUTE\"\n                }\n            ],\n            \"defaultChoice\": 0,\n            \"required\": false\n        },\n        {\n            \"type\": \"CHECKBOX\",\n            \"name\": \"Additional options?\",\n            \"choices\": [\n                {\n                    \"text\": \"Option 1\",\n                    \"priceModifier\": 5,\n                    \"priceModifierType\": \"PERCENT\"\n                },\n                {\n                    \"text\": \"Option 2\",\n                    \"priceModifier\": -10,\n                    \"priceModifierType\": \"ABSOLUTE\"\n                },\n                {\n                    \"text\": \"Option 3\",\n                    \"priceModifier\": 20,\n                    \"priceModifierType\": \"PERCENT\"\n                }\n            ],\n            \"required\": false\n        },\n        {\n            \"type\": \"TEXTFIELD\",\n            \"name\": \"Name\",\n            \"required\": true\n        },\n        {\n            \"type\": \"TEXTAREA\",\n            \"name\": \"Comments\",\n            \"required\": false\n        },\n        {\n            \"type\": \"DATE\",\n            \"name\": \"Date\",\n            \"required\": false\n        },\n        {\n            \"type\": \"FILES\",\n            \"name\": \"Upload file\",\n            \"required\": true\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/39622291",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"39622291"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update wholesale prices",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"wholesalePrices\": [\n        {\n            \"quantity\": 4,\n            \"price\": 11\n        },\n        {\n            \"quantity\": 7,\n            \"price\": 7\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update product attributes",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"attributes\": [\n        {\n            \"id\": SET-ATTRUBUTE-ID1,\n            \"value\": \"1222222\"\n        },\n        {\n            \"id\": SET-ATTRUBUTE-ID1,\n            \"value\": \"Apple\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/SET-PRODUCT-ID",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"SET-PRODUCT-ID"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get deleted products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/products/deleted",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"products",
+								"deleted"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Store Profile",
+			"item": [
+				{
+					"name": "Get a store profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/profile",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get stats about product/order/profile updates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/latest-stats",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"latest-stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update store profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\tgeneralInfo: {\n\t\tstoreUrl: \"http://www.example.com/store/\"\n\t},\n\tsettings: {\n\t\tclosed: false,\n\t\tstoreName: \"My Cool Store\"\n\t},\n\tcompany: {\n      companyName: \"My Company, Inc\",\n      email: \"store@example.com\",\n      street: \"144 West D Street\",\n      city: \"Encinitas\",\n      countryCode: \"US\",\n      postalCode: \"92024\",\n      stateOrProvinceCode: \"CA\",\n      phone: \"1(800)5555555\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/profile",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update store profile (how to add zones)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"zones\": [\n        {\n            \n            \"name\": \"United States - California\",\n            \"countryCodes\": [\n                \"US\"\n            ],\n            \"stateOrProvinceCodes\": [\n                \"US-CA\"\n            ]      \n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/profile",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add / upload store logo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/profile/logo",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"profile",
+								"logo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add / upload invoice logo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/profile/invoicelogo",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"profile",
+								"invoicelogo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete store logo",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/profile/logo",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"profile",
+								"logo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete invoice logo",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{ECWID_API_HOST}}/api/v3/{{ECWID_STORE_ID}}/profile/invoicelogo",
+							"protocol": "https",
+							"host": [
+								"{{ECWID_API_HOST}}"
+							],
+							"path": [
+								"api",
+								"v3",
+								"{{ECWID_STORE_ID}}",
+								"profile",
+								"invoicelogo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{ECWID_TOKEN_SECRET}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
