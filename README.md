@@ -32,3 +32,24 @@ This enables you to quickly switch between different environments (Test store, l
 ### Sample Usage
 Note: the token is not able to be modified in the query window - but it also isn't in the URL at the top anymore!<br />
 ![Sample Image](./postman/postman_sample.png?raw=true)
+
+## Documentation: Postman OAuth 2.0 token request settings.
+Details from https://my.ecwid.com/cp/#develop-apps you require:
+* Under App Keys within custom app:
+    * Client ID
+    * Client Secret (*Note: different from "Secret Token"*)
+* Callback URL: *Value you requested to be set by support*
+
+* Type: OAuth 2.0
+* Grant Type: Authorization Code
+* Callback URL
+* Auth URL: https://my.ecwid.com/api/oauth/authorize
+* Access Token URL: https://my.ecwid.com/api/oauth/token
+* Client ID
+* Client Secret
+* Scope: *list of access scopes - your Custom App shows those authorised for use - change from commas to spaces*
+
+### Notes:
+Doesn't require the Callback URL to be active - you just need to know it.
+
+![Sample Image](./postman/postman_oauth2.png?raw=true)
